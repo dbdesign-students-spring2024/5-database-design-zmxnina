@@ -127,12 +127,12 @@ To resolve the suggested violations, we decompose the original dataset into the 
     | 2            | 4               | 65    |
     | ...          | ...             | ...   |
 
-Note: primary keys are indicated wih **
+Note: primary keys are indicated with **
 ## ER Diagram
 ![ER diagram for 4NF compliant dataset](images/er_diagram.svg)
 
 ## Nomalization Explanation
-The following changes were made to the original dataset to achieve a 4NF compliant database design:
+The following changes were made to the original dataset to achieve a 4NF compliant database design.
 
 #### Decomposition into Multiple Tables
 As shown above, the dataset was divided into 8 distinct tables, each focusing on a specific entity: students, professors, courses, classrooms, sections, assignments, due dates, and grades. By creating separate tables for related entities, we eliminate the presence of multi-valued dependencies (MVDs), where more than one independent multi-valued fact about an entity existed within the same table. 
